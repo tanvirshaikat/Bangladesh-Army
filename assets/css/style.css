@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@font-face {
+  font-family: storyteller;
+  src: url(../fonts/Storytella.otf);
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Oswald', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+
+}
+.primary-menu{
+  background: #fff;
+  color: #000;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  padding: 18px 0px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.navbar-nav li {
+    padding: 0px 6px;
+}
+.primary-menu .navbar-nav .nav-link {
+    color: #000;
+}
+.clearhead {
+    height: 88px;
+}
+
+.video-background {
+  background: #000;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+  transform: scale(1.2);
+  overflow: hidden;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+.video-background:before {
+    content: '';
+    height: 100vh;
+    z-index: 999999;
+    width: 100vw;
+    position: absolute;
+    background: transparent linear-gradient(180deg, #006A4E12 0%, #044E3A91 55%, #045D45B5 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.landing-cover{
+  height: 100vh;
+  overflow: hidden;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin: 0px;
+    border: 0px;
+    padding-top: 20px;
+    border-radius: 0px;
+    margin-left: -118px;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+.header-message {
+    margin-top: 52vh;
+}
+.header-message h1 {
+    font: 600 74px/90px storyteller;
+    margin: 0;
+    color: #fff;
+}
+.header-message h3{
+  text-align: center;
+  font: 500 41px/52px Oswald;
+  letter-spacing: 0px;
+  color: #fff;
+}
+.chief-section{
+  width: 100%;
+  background: #041C2E 0% 0% no-repeat padding-box;
+  position: absolute;
+  bottom: 0;
+}
+.chief-message {
+    padding: 28px 0px;
+}
+.chief-message img {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -25px;
+}
+.chief-message .content h1 {
+    font: 500 24px/52px Oswald;
+    color: #FFFFFF;
+}
+.chief-message .content div {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.chief-message .content span {
+    font: Regular 18px/26px Rubik !important;
+    text-transform: uppercase;
+}
+.chief-message a {
+    font: 500 18px/26px Rubik;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    border: 2px solid #3FDA85;
+    border-radius: 21px;
+    padding: 8px 38px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+}
+.chief-message a:hover {
+    color: #3FDA85;
+    border: 2px solid #3FDA85;
+}
+.yellow-line{
+  height: 3px;
+  width: 100%;
+  background: #FFCC00 0% 0% no-repeat padding-box;
+  position: absolute;
+  top: 85px;
+}
+.green-line{
+  height: 3px;
+  width: 100%;
+  background: #006A4E 0% 0% no-repeat padding-box;
+  position: absolute;
+  top: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1515px) {
+    .container {
+        width: 1360px !important;
+        max-width: 1360px !important;
+    }
+}
+
+@media only screen and (max-width: 1310px) {
+    .header-message {
+      margin-top: 48vh;
+  }
+}
