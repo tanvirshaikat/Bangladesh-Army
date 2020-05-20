@@ -12,6 +12,8 @@
 
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -114,7 +116,7 @@
   
 <section class="home-2nd">
   <div class="container">
-    <div class="row" style="padding: 15px;">
+    <div class="row pt-15">
       <div class="col-lg-5 col-xs-12 no-padding">
         <div class="common-card" style="background-image: url('assets/images/peacekeeping_img.png');">
           <div class="content">
@@ -179,11 +181,81 @@
   </div>
 </section>
 
+<section class="home-3rd">
+  <div class="container">
+    <div class="row pt-15">
+      <div class="col-lg-8 pub-media no-padding" style="background-image: url('assets/images/publication.png');">
+        <div>
+          <h1>Publication & Media</h1>
+          <p>
+            Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit amet lectus non tristique. Nunc ut volutpat
+          </p>
+          <a href="#">Find More<img src="assets/images/arrow_white.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 no-padding">
+        <div class="vertical-ud owl-carousel">
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 64th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 63th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 62th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 61th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 60th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 59th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 58th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+          <a class="item" href="">
+            <h1>Bangladesh Army Journal 57th Issue</h1>
+            <h5>13 May, 2019</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- Bootstrap core JavaScript -->
   <script src="assets/vendor/jquery/jquery.slim.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+
+  <script>
+    $( document ).ready(function() {
+    
+  $(".owl-carousel").owlCarousel({
+    items: 3,
+    loop: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    rewind: true,
+    autoplay: true,
+    margin: 0,
+    nav: true
+  });
+});
+  </script>
 
 </body>
 

@@ -266,14 +266,67 @@ a:hover{
 .dual-img-a-right span img{
   width: 25px;
 }
-.home-3rd{
+.home-3rd, .home-3rd{
   margin-top: 40px;
 }
+.pt-15{
+  padding: 15px;
+}
+.pub-media{
+  background-size: cover;
+  background-position: center;
+}
+.pub-media div {
+    height: 100%;
+    width: 70%;
+    background: rgba(4, 28, 46, 0.53) 0% 0% no-repeat padding-box;
+    padding: 150px 80px;
+}
+.pub-media div h1{
+  text-align: left;
+  font: 500 32px/52px Oswald;
+  letter-spacing: 0px;
+  color: #FFCC00;
+}
+.pub-media div p{
+  font: 300 16px/26px Rubik;
+  color: #FFFFFF;
+}
+.pub-media div a{
+  font: 400 16px/6px Rubik;
+  letter-spacing: 1.6px;
+  color: #FFFFFF;
+}
 
+/*vertical slider*/
 
+/*vertical slider end*/
 
+.vertical-ud {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    padding: 20px;
+    height: 480px;
+    overflow: hidden;
+}
+.vertical-ud a{
+    padding: 20px 25px;
+    display: inline-block;
+    width: 100%;
+}
 
+.vertical-ud a:hover{
+    background-color: #ffffff;
+}
 
+.vertical-ud a h1{
+    font: 500 20px/28px Oswald;
+    color: #041C2E;
+    margin-bottom: 14px;
+}
+.vertical-ud a h5{
+    font: Italic 16px/6px Rubik;
+    color: #7B7B7B;
+}
 
 @media only screen and (min-width: 1515px) {
     .container {
