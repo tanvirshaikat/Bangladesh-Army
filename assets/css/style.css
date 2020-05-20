@@ -229,7 +229,7 @@ a:hover{
 .count-content h2{
     font: 500 24px/32px Rubik;
 }
-.home-2nd{
+.home-2nd, .home-4th{
   margin-top: 80px;
 }
 .dual-img-a-left {
@@ -327,6 +327,58 @@ a:hover{
     font: Italic 16px/6px Rubik;
     color: #7B7B7B;
 }
+.spotlight-slider{
+
+}
+.spotlight-item{
+  height: 402px;
+  background-size: cover;
+  background-position: center; 
+}
+.owl-dots button {
+    width: 10px;
+    height: 10px;
+    background-color: #8B8B8B !important;
+    z-index: 9999999;
+    margin: 2px;
+    border-radius: 50%;
+}
+.owl-dots button.active {
+    width: 16px;
+    background-color: #FFCC00 !important;
+    border-radius: 4px;
+}
+
+.spotlight-slider .owl-dots {
+    position: absolute;
+    right: 40px;
+    bottom: 6%;
+    z-index: 9;
+}
+.spotlight-slider:before {
+    content: 'Spotlight';
+    background-color: #FFCC00;
+    border-radius: 4px;
+    text-align: center;
+    font: 400 14px/24px Rubik;
+    letter-spacing: 0px;
+    color: #1B2925 !important;
+    padding: 5px 14px;
+    position: absolute;
+    z-index: 9;
+    bottom: 5%;
+    left: 30px;
+}
+.spotlight-slider:after{
+    content: '';
+    height: 100%;
+    width: 100.01%;
+    top: 0;
+    position: absolute;
+    background: transparent linear-gradient(180deg, #1B292500 0%, #1B2925 100%) 0% 0% no-repeat padding-box;
+    background-position: center;
+}
+
 
 @media only screen and (min-width: 1515px) {
     .container {

@@ -194,7 +194,7 @@
         </div>
       </div>
       <div class="col-lg-4 no-padding">
-        <div class="vertical-ud owl-carousel">
+        <div class="vertical-ud">
           <a class="item" href="">
             <h1>Bangladesh Army Journal 64th Issue</h1>
             <h5>13 May, 2019</h5>
@@ -234,6 +234,37 @@
 </section>
 
 
+<section class="home-4th">
+  <div class="container full-container">
+    <div class="row">
+      <div class="col-md-6  no-padding owl-carousel spotlight-slider">
+        <div class="spotlight-item" style="background-image: url(assets/images/spotlight.png)"></div>
+        <div class="spotlight-item" style="background-image: url(assets/images/spotlight.png)"></div>
+        <div class="spotlight-item" style="background-image: url(assets/images/spotlight.png)"></div>
+        <div class="spotlight-item" style="background-image: url(assets/images/spotlight.png)"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="home-3rd">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="full-img" src="assets/images/recruitment.png">
+        <a class="dual-img-a-left" href="#">Find <span>Recruitment</span> Info <img src="assets/images/arrow_white.png"></a>
+      </div>
+
+      <div class="col-lg-6">
+        <img class="full-img" src="assets/images/tender.png">
+        <a class="dual-img-a-right" href="#">Tender Information <br> <span>Find Here <img src="assets/images/arrow_white.png"></span></a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="assets/vendor/jquery/jquery.slim.min.js"></script>
@@ -243,8 +274,8 @@
   <script>
     $( document ).ready(function() {
     
-  $(".owl-carousel").owlCarousel({
-    items: 3,
+  $(".spotlight-slider").owlCarousel({
+    items: 1,
     loop: false,
     mouseDrag: false,
     touchDrag: false,
@@ -252,7 +283,8 @@
     rewind: true,
     autoplay: true,
     margin: 0,
-    nav: true
+    nav: false,
+    dot:true
   });
 });
   </script>
