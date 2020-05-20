@@ -8,9 +8,12 @@
 body{
   overflow-x: hidden;
   font-family: 'Oswald', sans-serif;
-  height: 100vh;
-  overflow: hidden;
-
+}
+.full-img{
+  width: 100%;
+}
+a:hover{
+  text-decoration: none;
 }
 .primary-menu{
   background: #fff;
@@ -34,7 +37,6 @@ body{
 }
 
 .video-background {
-  background: #000;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
@@ -46,22 +48,23 @@ body{
   position: absolute;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 86px);
   pointer-events: none;
   overflow: hidden;
 }
 .video-background:before {
     content: '';
-    height: 100vh;
+    height: calc(100vh - 86px);
     z-index: 999999;
     width: 100vw;
     position: absolute;
     background: transparent linear-gradient(180deg, #006A4E12 0%, #044E3A91 55%, #045D45B5 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-.landing-cover{
-  height: 100vh;
-  overflow: hidden;
+.landing-cover {
+    height: calc(100vh - 86px);
+    overflow: hidden;
+
 }
 .dropdown:hover > .dropdown-menu {
     display: block;
@@ -151,18 +154,121 @@ body{
   position: absolute;
   top: 88px;
 }
+.common-card {
+    height: 374px;
+    background-size: cover;
+}
+.common-card:before {
+    content: '';
+    height: 100%;
+    width:100.01%;
+    position: absolute;
+    background: transparent linear-gradient(180deg, #1B292500 0%, #1B2925 100%) 0% 0% no-repeat padding-box;
+    background-position: center;
+}
+.no-padding{
+  padding: 0px;
+}
+.full-container{
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.y-bg{
+  background-color: #FFCC00;
+}
+.g-bg{
+  background-color: #006A4E;
+}
+.dual-image{
+  height: 187px;
+  background-size: cover;
+  background-position: center;
+}
+.yellow-badge {
+    background-color: #FFCC00;
+    border-radius: 4px;
+    text-align: center;
+    font: 400 14px/24px Rubik;
+    letter-spacing: 0px;
+    color: #1B2925 !important;
+    padding: 10px 14px;
+}
+.yellow-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font: 400 16px/24px Rubik;
+  color: #FFCC00;
+  border-bottom: 1px solid #FFCC00;
 
+}
+.common-card .content h1 {
+  text-align: left;
+  font: 500 20px/28px Oswald;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-top: 24px;
 
-
-
-
-
-
-
-
-
-
-
+}
+.common-card .content {
+    padding: 0px 30px;
+    position: absolute;
+    bottom: 24px;
+}
+.count-content {
+    padding: 6px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.count-content h1{
+    font: 500 40px/53px Oswald;
+}
+.count-content h2{
+    font: 500 24px/32px Rubik;
+}
+.home-2nd{
+  margin-top: 80px;
+}
+.dual-img-a-left {
+    text-align: left;
+    font: 500 30px/40px Oswald;
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 38px;
+    bottom: 22px;
+    max-width: 213px;
+    text-decoration: none;
+}
+.dual-img-a-left span{
+  color: #FFCC00;
+}
+.dual-img-a-right {
+    text-align: right;
+    font: 500 40px/48px Oswald;
+    letter-spacing: 1px;
+    color: #041C2E;
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+    max-width: 213px;
+    text-decoration: none;
+}
+.dual-img-a-right span{
+  text-align: right;
+  font: 300 16px/6px Rubik;
+  letter-spacing: 1.6px;
+  color: #FFFFFF;
+}
+.dual-img-a-right span img{
+  width: 25px;
+}
+.home-3rd{
+  margin-top: 40px;
+}
 
 
 
@@ -173,6 +279,10 @@ body{
     .container {
         width: 1360px !important;
         max-width: 1360px !important;
+    }
+    .full-container{
+      width: 100% !important;
+      max-width: 100% !important;
     }
 }
 
