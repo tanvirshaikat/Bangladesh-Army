@@ -90,6 +90,24 @@
       max-width: 100px !important;
       text-align: right;
   }
+  .navbar-toggler:focus, .navbar-toggler:hover {
+      outline: none;
+  }
+  .primary-menu .navbar-nav .nav-link {
+      padding: 8px 9px;
+  }
+  .dropdown:hover > .dropdown-menu {
+      padding-top: 0px;
+  }
+  .clearhead {
+      height: 49px;
+  }
+  .yellow-line {
+      top: 49px;
+  }
+  .green-line {
+      top: 52px;
+  }
 
 }
 
