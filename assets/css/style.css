@@ -67,13 +67,16 @@ a:hover{
     overflow: hidden;
 
 }
+.dropdown-menu{
+  right: 0 !important;
+  left: auto !important;
+}
 .dropdown:hover > .dropdown-menu {
     display: block;
     margin: 0px;
     border: 0px;
     padding-top: 20px;
     border-radius: 0px;
-    margin-left: -118px;
 }
 .dropdown > .dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
@@ -512,24 +515,6 @@ footer i {
     left: 0;
     top: 0;
 }
-
-
-@media only screen and (min-width: 1515px) {
-    .container {
-        width: 1360px !important;
-        max-width: 1360px !important;
-    }
-    .full-container{
-      width: 100% !important;
-      max-width: 100% !important;
-    }
-    .vertical-ud a {
-      padding: 28px 25px !important;
-  }
-}
-
-@media only screen and (max-width: 1310px) {
-    .header-message {
-      margin-top: 48vh;
-  }
+.mt-15 {
+    margin-top: 15px;
 }
