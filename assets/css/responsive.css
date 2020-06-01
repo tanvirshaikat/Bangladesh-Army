@@ -126,6 +126,15 @@
     .vertical-ud a {
       padding: 28px 25px !important;
   }
+  .chief-card {
+      height: 482px !important;
+  }
+  .chief-card h1 {
+      margin-bottom: 28px;
+  }
+  .col-md-4.col-xs-12.mb-18{
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 1310px) {
