@@ -977,10 +977,12 @@ h1{
     box-shadow: 0px 10px 20px #7D7D7D29;
 }
 .nav.nav-tabs.common-navtab {
-    width: 100%;
     border: 0;
-    margin-bottom: 54px;
-    margin-left: 42%;
+    margin: auto;
+    margin-bottom: 85px;
+    position: relative;
+    right: 0;
+    left: 0;
 }
 .common-navtab li a {
     border: 0 !important;
@@ -1004,4 +1006,75 @@ h1{
 }
 .mt-100{
   margin-top: 100px;
+}
+.war-heros{
+  border:0px !important;
+  width: 60%;
+  text-align: left;
+}
+.war-heros li a {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    border: 5px solid rgba(123, 123, 123, 0.51) !important;
+    overflow: hidden;
+    transform: rotate(45deg);
+    margin-right: 50px;
+    padding: 0px;
+}
+.war-heros div li {
+    float: left;
+}
+.war-heros li a.active, .war-heros li a:hover {
+    border: 5px solid #FFCC00 !important;
+}
+.war-heros li a img {
+    width: 100%;
+    transform: rotate(-45deg) scale(2);
+    margin-top: 15px;
+    margin-left: 18px;
+    opacity: 0.6;
+    transition: opacity 1s;
+
+}
+.war-heros li a.active img,.war-heros li a:hover img {
+    opacity: 1;
+    transition: opacity 1s;
+}
+.war-heros li:nth-last-child(3) {
+    margin-left: 80px;
+}
+.war-heros li:nth-child(n+5){
+    margin-top: -28px;
+}
+.mb-100{
+  margin-bottom: 100px;
+}
+.srestha-pic {
+    width: 438px;
+    height: 315px;
+    background-size: 100%;
+    background-position: top;
+    text-align: center;
+    position: absolute;
+    margin-top: -382px;
+    right: 0;
+}
+.srestha-pic img {
+    margin-top: 45px;
+    border-bottom-left-radius: 48%;
+    border-bottom-right-radius: 48%;
+    width: 78%;
+}
+.war-heroes-table thead th{
+  background: #f6f6f6;
+}
+.war-heroes-table tr:nth-child(odd) {
+    background: #ffffff;
+}
+.war-heroes-table tr:nth-child(even) {
+    background: #f6f6f6;
+}
+.war-heroes-table .rank-left{
+  background-color: #041C2E;
 }
